@@ -11,15 +11,15 @@ module.exports = {
   },
   devServer: {
     contentBase: './dist'
-  },   
+  },
   devtool: 'eval-source-map',
   plugins: [
     new ESLintPlugin(),
     new CleanWebpackPlugin({
       // verbose: true
-    }), 
+    }),
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'memory',
       template: './src/index.html',
       inject: 'body'
     })

@@ -1,8 +1,9 @@
-export default class Card extends Game {
-  constructor(value, position) {
+import Game from './game.js';
+
+export class Card{
+  constructor(value) {
     this.value = value;
-    this.position = position;
     this.flipped = false;  
-  };
+  }
 
 }
